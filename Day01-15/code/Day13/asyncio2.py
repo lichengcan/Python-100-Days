@@ -17,6 +17,7 @@ async def hello():
     print('%s: goodbye, world!' % threading.current_thread())
 
 
+# 引入loop
 loop = asyncio.get_event_loop()
 tasks = [hello(), hello()]
 # 等待两个异步I/O操作执行结束

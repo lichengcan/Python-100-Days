@@ -3,7 +3,6 @@ from threading import Thread
 
 
 def main():
-
     class RefreshScreenThread(Thread):
 
         def __init__(self, client):
@@ -17,7 +16,7 @@ def main():
 
     nickname = input('请输入你的昵称: ')
     myclient = socket()
-    myclient.connect(('10.7.189.118', 12345))
+    myclient.connect(('192.168.104.130', 23))
     running = True
     RefreshScreenThread(myclient).start()
     while running:

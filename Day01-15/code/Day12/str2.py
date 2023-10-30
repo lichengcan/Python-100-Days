@@ -24,6 +24,7 @@ def reverse_str3(str):
     # 不应该使用不变字符串做字符串连接操作 因为会产生很多无用字符串对象
     rstr = StringIO()
     str_len = len(str)
+    # range 起始值 终止值 步长
     for index in range(str_len - 1, -1, -1):
         rstr.write(str[index])
     return rstr.getvalue()
